@@ -149,7 +149,7 @@ contract SignDelegationTest is Test {
 
         // Bob attaches the signed delegation from Alice and broadcasts it.
         vm.broadcast(BOB_PK);
-        vm.attachDelegation(signedDelegation);
+        vm.attachDelegation(signedDelegatiovm.attachDelegation(signedDelegation);
 
         // Verify that Alice's account now behaves as a smart contract.
         bytes memory code = address(ALICE_ADDRESS).code;
